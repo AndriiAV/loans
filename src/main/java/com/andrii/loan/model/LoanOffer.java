@@ -1,4 +1,4 @@
-package model;
+package com.andrii.loan.model;
 
 import java.math.BigDecimal;
 
@@ -7,8 +7,8 @@ public class LoanOffer {
     private String bankName;
     private String offerName;
     private BigDecimal maxAmount;
-    private int maxDuration;
-    private int interestRate;
+    private int maxDuration;    //Number of months
+    private int interestRate;   //Percentages
     private Currency currency;
 
     public long getId() {

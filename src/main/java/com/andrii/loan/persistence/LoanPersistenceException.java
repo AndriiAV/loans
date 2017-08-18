@@ -1,4 +1,4 @@
-package persistence;
+package com.andrii.loan.persistence;
 
 public class LoanPersistenceException extends RuntimeException {
 

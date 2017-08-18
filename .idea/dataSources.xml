@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="loan_db@db4free.net" uuid="a2f91137-fe99-4ad3-a73a-d636a6a36f80">
+    <data-source source="LOCAL" name="loan_my_db@localhost" uuid="8fac3dfe-ad02-49c7-9b13-29a50e596f0a">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://db4free.net:3306/loan_db</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/loan_my_db</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

@@ -1,4 +1,4 @@
-package model;
+package com.andrii.loan.model;
 
 public enum Currency {
     UAH,

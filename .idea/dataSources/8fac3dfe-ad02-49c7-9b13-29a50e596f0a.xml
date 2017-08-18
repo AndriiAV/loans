@@ -1,44 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="loan_db@db4free.net">
+<dataSource name="loan_my_db@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
     <root id="1"/>
-    <schema id="2" parent="1" name="loan_db">
+    <schema id="2" parent="1" name="loan_my_db">
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
     <schema id="3" parent="1" name="information_schema"/>
-    <table id="4" parent="2" name="loan_offer"/>
-    <column id="5" parent="4" name="id">
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sakila"/>
+    <schema id="7" parent="1" name="test"/>
+    <schema id="8" parent="1" name="world"/>
+    <table id="9" parent="2" name="loan_offer"/>
+    <column id="10" parent="9" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="6" parent="4" name="bank_name">
+    <column id="11" parent="9" name="bank_name">
       <Position>2</Position>
       <DataType>varchar(256)|0</DataType>
     </column>
-    <column id="7" parent="4" name="offer_name">
+    <column id="12" parent="9" name="offer_name">
       <Position>3</Position>
       <DataType>varchar(256)|0</DataType>
     </column>
-    <column id="8" parent="4" name="max_amount">
+    <column id="13" parent="9" name="max_amount">
       <Position>4</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="9" parent="4" name="max_duration">
+    <column id="14" parent="9" name="max_duration">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="10" parent="4" name="interest_rate">
+    <column id="15" parent="9" name="interest_rate">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="11" parent="4" name="currency">
+    <column id="16" parent="9" name="currency">
       <Position>7</Position>
       <DataType>varchar(3)|0</DataType>
     </column>
-    <key id="12" parent="4" name="PRIMARY">
+    <key id="17" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

@@ -1,6 +1,9 @@
-package persistence;
+package com.andrii.loan.persistence;
 
-import model.LoanOffer;
+import com.andrii.loan.model.LoanOffer;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 public interface LoanOfferDao { // DAO = Data Access Object
 
@@ -20,4 +23,9 @@ public interface LoanOfferDao { // DAO = Data Access Object
      * @throws LoanNotFoundException
      */
     LoanOffer delete(long id);
+
+    /**
+     * @throws LoanPersistenceException
+     */
+    List<LoanOffer> findByMaxAmount(BigDecimal from, BigDecimal to);
 }
